@@ -1,0 +1,21 @@
+.user-menu {
+  @include flex-center-sb;
+  gap: 37px;
+
+  &__btn {
+    display: block;
+
+    svg {
+      --size: 22px;
+      width: var(--size);
+      height: var(--size);
+      fill: var(--accent-color);
+      transition: all .3s;
+
+      &:hover {
+        fill: var(--secondary-color);
+        scale: (1.2);
+      }
+    }
+  }
+}
