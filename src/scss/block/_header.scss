@@ -1,0 +1,8 @@
+.header {
+  padding: var(--section-padding) 0;
+
+  &__container {
+    @include flex-center-sb;
+    gap: 37px;
+  }
+}

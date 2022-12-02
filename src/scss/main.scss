@@ -1,0 +1,42 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Federo&family=Open+Sans:wght@300;400&display=swap');
+
+// Common
+
+@import '_reset';
+@import '_vars';
+@import '_mixins';
+
+// Blocks
+@import 'block/header';
+@import 'block/logo';
+@import 'block/menu';
+
+// Base styles
+
+body {
+  font-family: var(--main-font-family);
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--accent-color);
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.main {
+  flex: 1 1 auto;
+}
+
+.container {
+  width: min(100% - var(--main-padding), var(--container-width));
+  margin-inline: auto;
+}
+
+.container--fluid {
+  width: min(100% - var(--main-padding), var(--container-fluid-width));
+  margin-inline: auto;
+}
