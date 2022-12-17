@@ -1,0 +1,50 @@
+.hero {
+  padding: var(--section-padding) 0;
+
+  &__container {
+    position: relative;
+    padding: 0 65px;
+  }
+
+  &__slider {
+
+    &-wrapper {}
+
+    &-slide {
+      @include flex-center-sb;
+      gap: 100px;
+    }
+
+    &-img {}
+
+    &-description {}
+
+    &-title {
+      max-width: 385px;
+      font-family: var(--secondary-font-family);
+      font-size: 50px;
+      color: var(--secondary-color);
+      margin-bottom: var(--main-gap);
+    }
+
+    &-btn {
+      max-width: 122px;
+    }
+
+    &-prev,
+    &-next {
+      position: absolute;
+      top: 50%;
+      cursor: pointer;
+      transform: translate(0, -50%);
+    }
+
+    &-prev {
+      left: 0;
+    }
+
+    &-next {
+      right: 0;
+    }
+  }
+}
