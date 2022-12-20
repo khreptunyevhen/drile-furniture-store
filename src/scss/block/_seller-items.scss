@@ -1,0 +1,17 @@
+.seller-items {
+  &__container {
+    padding: var(--section-padding) 0;
+  }
+
+  &__wrapper {
+    display: flex;
+    align-items: stretch;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: var(--main-gap);
+  }
+
+  &__title {
+    margin-bottom: 40px;
+  }
+}
